@@ -31,7 +31,8 @@ st.set_page_config(
 DATA_PATH = "dataset/creditcard.csv"
 MODEL_PATH = "models/fraud_detection_model.pkl"
 
-DATA_URL = "https://drive.google.com/file/d/1lGPuRgXTnc2_r1GofpxUXjDiZVSzcOji/view?usp=drive_link"
+DATA_URL = "https://drive.google.com/file/d/1lGPuRgXTnc2_r1GofpxUXjDiZVSzcOji/view?usp=sharing"
+            
 # ----------------------------------------------------------------------------
 # PREMIUM CSS THEME
 # ----------------------------------------------------------------------------
