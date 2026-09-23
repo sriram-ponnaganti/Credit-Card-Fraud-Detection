@@ -15,15 +15,17 @@ An AI-powered **Credit Card Fraud Detection system** built with Python, Flask, a
 ---
 ## 📸 Screenshots
 
-<p align="center">
-  <img src="screenshots/overview.png" alt="Fraud Detection Dashboard" width="800">
-</p>
-<p align="center">
-  <img src="screenshots/live_prediction.png" alt="Live Prediction" width="800">
-</p>
-<p align="center">
-  <img src="screenshots/model_performance.png" alt="Model Performance" width="800">
-</p>
+<table>
+  <tr>
+    <td width="50%"><img src="assets/creditfraud1.png" alt="Overview Dashboard" width="100%"></td>
+    <td width="50%"><img src="assets/creditfraud2.png" alt="Data Explorer" width="100%"></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="assets/creditfraud3.png" alt="Live Prediction" width="100%"></td>
+    <td width="50%"><img src="assets/creditfraud4.png" alt="Model Performance" width="100%"></td>
+  </tr>
+</table>
+
 
 ## ✨ Features
 
