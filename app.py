@@ -3,7 +3,6 @@ Credit Card Fraud Detection — Premium Streamlit Dashboard
 Run with:  streamlit run streamlit_app.py
 Place this file in your project root (same level as app.py / requirements.txt).
 """
-
 import os
 import pickle
 import numpy as np
@@ -12,6 +11,23 @@ import streamlit as st
 import streamlit.components.v1 as components
 import plotly.express as px
 import plotly.graph_objects as go
+import gdown
+
+DATA_PATH = "dataset/creditcard.csv"
+DATA_URL = "https://drive.google.com/file/d/1lGPuRgXTnc2_r1GofpxUXjDiZVSzcOji/view?usp=drive_link"
+
+@st.cache_data(show_spinner="Downloading dataset...")
+def load_data(path):
+    if not os.path.exists(path) or os.path.getsize(path) == 0:
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        try:
+            gdown.download(DATA_URL, path, quiet=False)
+        except Exception:
+            return None
+    if not os.path.exists(path) or os.path.getsize(path) == 0:
+        return None
+    return pd.read_csv(path)
+    
 from sklearn.metrics import (
     confusion_matrix, roc_curve, auc, classification_report,
     precision_recall_curve
